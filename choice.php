@@ -14,53 +14,270 @@
             border-bottom:1px solid black;
             border-radius: 5px;
         }
+
+        label{
+            font-weight: bold;
+        }
+
+        table, th, td{
+            padding: 5px;
+            
+        }
     </style>
 </head>
 <body>
     <div class="container pt-5">
-        <div class="card col-md-8 mx-auto">
+        <div class="card col-md-10 mx-auto">
             <div class="card-header" style="background:#034199; color:#fff;">
-                <h4>Create Form</h4>
+                <h4>Create Choice </h4>
             </div>
             <div class="card-body">
+
+            <form action="{{ route('search') }}" method="GET">
+                <center>
+                <input type="text" name="query" placeholder="Search...">
+                <button type="submit">Search</button>
+                </center>
+            </form>
+                        
             <form>
                 <div class="form-group col-md-10 mx-auto my-4">
+                    <label class="col-md-3" for="nameSelect">ID</label>
+                    <input class="col-md-7" type="text" name="pse_id" class="form-control" id="pse_id" readonly>
+                </div>
+                
+                <div class="form-group col-md-10 mx-auto my-4">
                     <label class="col-md-3" for="nameSelect">Name</label>
-                    <select class="col-md-7" name="name" id="name">
-                    <option value="">Select name</option>
-                    <!-- Populate options dynamically from database -->
-                    <option value="1">Name 1</option>
-                    <option value="2">Name 2</option>
-                    <option value="3">Name 3</option>
-                    </select>
+                    <input class="col-md-7" type="text" name="name" class="form-control" id="name" readonly>
                 </div>
 
                 <div class="form-group col-md-10 mx-auto my-4">
                     <label class="col-md-3" for="contact">Contact</label>
-                    <input class="col-md-7" type="text" name="contact" class="form-control" id="contact" placeholder="Enter contact number">
+                    <input class="col-md-7" type="text" name="contact" class="form-control" id="contact" readonly>
                 </div>
 
                 <div class="form-group col-md-10 mx-auto my-4">
-                    <table id="myTable">
+                    <table class="table-bordered" width="100%" style="border-color: #ddd;" id="myTable">
                         <tr>
-                            <td>C1</td>
-                            <td>C2</td>
-                            <td>C3</td>
-                            <td>C4</td>
-                            <td>C5</td>
+                            <th width="50%">Candidates</th>
+                            <th width="20%">Code</th>
+                           
                         </tr>
-                        <tr>
+                        <!-- row 1 -->
+                        <tr >
                             <td>
-                                <select class="" name="name" id="name">
-                                <option value="">Select name</option>
+                                <select class="" name="candidate" id="candidate">
+                                <option value="">Select candidate</option>
                                 <!-- Populate options dynamically from database -->
-                                <option value="1">Name 1</option>
-                                <option value="2">Name 2</option>
-                                <option value="3">Name 3</option>
+                                <option value="1">candidate 1</option>
+                                <option value="2">candidate 2</option>
+                                <option value="3">candidate 3</option>
                                 </select>
 
                             </td>
+
+                            <td>
+                                <input type="radio"> G
+                                <input type="radio"> Y
+                                <input type="radio"> R
+
+                            </td>
                         </tr>
+
+                        <!-- row 1 -->
+                        <tr >
+                            <td>
+                                <select class="" name="candidate" id="candidate">
+                                <option value="">Select candidate</option>
+                                <!-- Populate options dynamically from database -->
+                                <option value="1">candidate 1</option>
+                                <option value="2">candidate 2</option>
+                                <option value="3">candidate 3</option>
+                                </select>
+
+                            </td>
+
+                            <td>
+                                <input type="radio"> G
+                                <input type="radio"> Y
+                                <input type="radio"> R
+
+                            </td>
+                        </tr>
+
+                        <!-- row 1 -->
+                        <tr >
+                            <td>
+                                <select class="" name="candidate" id="candidate">
+                                <option value="">Select candidate</option>
+                                <!-- Populate options dynamically from database -->
+                                <option value="1">candidate 1</option>
+                                <option value="2">candidate 2</option>
+                                <option value="3">candidate 3</option>
+                                </select>
+
+                            </td>
+
+                            <td>
+                                <input type="radio"> G
+                                <input type="radio"> Y
+                                <input type="radio"> R
+
+                            </td>
+                        </tr>
+
+                        <!-- row 1 -->
+                        <tr >
+                            <td>
+                                <select class="" name="candidate" id="candidate">
+                                <option value="">Select candidate</option>
+                                <!-- Populate options dynamically from database -->
+                                <option value="1">candidate 1</option>
+                                <option value="2">candidate 2</option>
+                                <option value="3">candidate 3</option>
+                                </select>
+
+                            </td>
+
+                            <td>
+                                <input type="radio"> G
+                                <input type="radio"> Y
+                                <input type="radio"> R
+
+                            </td>
+                        </tr>
+
+                        <!-- row 1 -->
+                        <tr >
+                            <td>
+                                <select class="" name="candidate" id="candidate">
+                                <option value="">Select candidate</option>
+                                <!-- Populate options dynamically from database -->
+                                <option value="1">candidate 1</option>
+                                <option value="2">candidate 2</option>
+                                <option value="3">candidate 3</option>
+                                </select>
+
+                            </td>
+
+                            <td>
+                                <input type="radio"> G
+                                <input type="radio"> Y
+                                <input type="radio"> R
+
+                            </td>
+                        </tr>
+
+                        </tr>
+                        <!-- row 1 -->
+                        <tr >
+                            <td>
+                                <select class="" name="candidate" id="candidate">
+                                <option value="">Select candidate</option>
+                                <!-- Populate options dynamically from database -->
+                                <option value="1">candidate 1</option>
+                                <option value="2">candidate 2</option>
+                                <option value="3">candidate 3</option>
+                                </select>
+
+                            </td>
+
+                            <td>
+                                <input type="radio"> G
+                                <input type="radio"> Y
+                                <input type="radio"> R
+
+                            </td>
+                        </tr>
+
+                        <!-- row 1 -->
+                        <tr >
+                            <td>
+                                <select class="" name="candidate" id="candidate">
+                                <option value="">Select candidate</option>
+                                <!-- Populate options dynamically from database -->
+                                <option value="1">candidate 1</option>
+                                <option value="2">candidate 2</option>
+                                <option value="3">candidate 3</option>
+                                </select>
+
+                            </td>
+
+                            <td>
+                                <input type="radio"> G
+                                <input type="radio"> Y
+                                <input type="radio"> R
+
+                            </td>
+                        </tr>
+
+                        <!-- row 1 -->
+                        <tr >
+                            <td>
+                                <select class="" name="candidate" id="candidate">
+                                <option value="">Select candidate</option>
+                                <!-- Populate options dynamically from database -->
+                                <option value="1">candidate 1</option>
+                                <option value="2">candidate 2</option>
+                                <option value="3">candidate 3</option>
+                                </select>
+
+                            </td>
+
+                            <td>
+                                <input type="radio"> G
+                                <input type="radio"> Y
+                                <input type="radio"> R
+
+                            </td>
+                        </tr>
+
+                        <!-- row 1 -->
+                        <tr >
+                            <td>
+                                <select class="" name="candidate" id="candidate">
+                                <option value="">Select candidate</option>
+                                <!-- Populate options dynamically from database -->
+                                <option value="1">candidate 1</option>
+                                <option value="2">candidate 2</option>
+                                <option value="3">candidate 3</option>
+                                </select>
+
+                            </td>
+
+                            <td>
+                                <input type="radio"> G
+                                <input type="radio"> Y
+                                <input type="radio"> R
+
+                            </td>
+                        </tr>
+
+                        <!-- row 1 -->
+                        <tr >
+                            <td>
+                                <select class="" name="candidate" id="candidate">
+                                <option value="">Select candidate</option>
+                                <!-- Populate options dynamically from database -->
+                                <option value="1">candidate 1</option>
+                                <option value="2">candidate 2</option>
+                                <option value="3">candidate 3</option>
+                                </select>
+
+                            </td>
+
+                            <td>
+                                <input type="radio"> G
+                                <input type="radio"> Y
+                                <input type="radio"> R
+
+                            </td>
+                        </tr>
+
+
+
+
+
                     </table>
                    
                 </div>
