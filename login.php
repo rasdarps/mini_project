@@ -273,7 +273,7 @@
 
         <footer>
             <div class="text-center">
-                <p>2018 - <?php echo date('Y')?> (c) <a href="#"> RICT </a> </p>
+                <p style="color:#fff;">2018 - <?php echo date('Y')?> (c) <a href="#"> RICT </a> </p>
             </div>
         </footer>
     </div>
