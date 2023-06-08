@@ -25,12 +25,12 @@
             <form>
                 <div class="form-group col-md-10 mx-auto py-3">
                     <label class="col-md-3" for="ConstName">Constituency</label>
-                    <input class="col-md-7" type="text" name="const_name" class="form-control" id="const_name" placeholder="Enter constituency name">
+                    <input class="col-md-7" type="text" name="name" class="form-control" id="const_name" placeholder="Enter constituency name">
                 </div>
 
                 <div class="form-group col-md-10 mx-auto my-4">
                     <label class="col-md-3" for="regionSelect">Region</label>
-                    <select class="col-md-7" name="region_name" id="region_name">
+                    <select class="col-md-7" name="name" id="name">
                     <option value="">Select region</option>
                     <!-- Populate options dynamically from database -->
                     <option value="1">Region 1</option>
